@@ -1,38 +1,27 @@
-
-import React from 'react';
-import { Link } from 'react-router-dom';
-import { readdirSync } from 'fs';
-import { join } from 'path';
-import { Button } from 'bootstrap';
-import Container from "react-bootstrap/Container";
-import Nav from "react-bootstrap/Nav";
-import Navbar from "react-bootstrap/Navbar";
-import NavDropdown from "react-bootstrap/NavDropdown";
+import { Link } from "react-router-dom";
+import React from "react";
+//import { Button } from "bootstrap";
+// import Container from "react-bootstrap/Container";
 
 
-function getPages() {
-  const pagesDir = join(__dirname, '../pages');
-  const files = readdirSync(pagesDir);
-  return files.map((file) => ({
-    name: file.replace('.jsx', ''),
-    path: `/pages/${file.replace('.jsx', '')}`,
-  }));
+export default function MainNav() {
+	// The Navbar UI component will render each of the Link elements in the links prop
+	return (
+		<nav className="navbar navbar-expand-lg bg-info">
+			{[
+				<Link key={1} className="header-div-ul-li" to="/">
+					About
+				</Link>,
+				<Link key={2} className="header-div-ul-li" to="Portfolio">
+					Portfolio
+				</Link>,
+				<Link key={3} className="header-div-ul-li" to="/Resume">
+					Resume
+				</Link>,
+				<Link key={4} className="header-div-ul-li" to="/Contact">
+					Contact
+				</Link>,
+			]}
+		</nav>
+	);
 }
-
-function Nav() {
-  const pages = getPages();
-
-  return (
-    <nav>
-      <ul>
-        {pages.map((page) => (
-          <li key={page.name}>
-            <Link to={page.path}>{page.name}</Link>
-          </li>
-        ))}
-      </ul>
-    </nav>
-  );
-}
-
-export default Nav;
