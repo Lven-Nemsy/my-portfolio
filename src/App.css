@@ -40,3 +40,219 @@
 .read-the-docs {
   color: #888;
 }
+
+/*Header*/
+
+.header {
+    display: flexbox;
+    font-family: 'Impact, Haettenschweiler, Arial Narrow Bold, sans-serif';
+    font-size: 30px;
+    background-image: url(./images/IMG_0951.JPEG);
+    background-size:cover;
+    background-position:center;
+    color: #8906d4;
+    align-items: center;
+}
+
+.my-name {
+    display: flex;
+    padding-top: 100px;
+    font-style: oblique;
+    margin-left: 30px;
+    margin-bottom: 0px;
+    text-decoration:wavy;
+}
+
+.my-last-name {
+    display: flex;
+    font-style: oblique;
+    margin-left: 50px;
+    margin-top: 0px;
+    text-decoration:wavy;
+    text-align: center;
+}
+
+.header-div-ul {
+    display: flex;
+    list-style-type: none;
+    font-size: 25px;
+    float: end;
+    align-items: end;
+    flex-direction: column;
+    text-align: left;
+}
+
+.header-div-ul-li {
+    display: flex;
+    font-weight: bold;
+    text-align: left;
+    float: inline-end;
+    color: #8906d4;
+    align-items: end;
+    margin-right: 30px;
+}
+
+
+
+/*Body*/
+
+.body {
+    display: flexbox;
+    font-style:'Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif';
+    color: #8906d4;
+    font-weight: bolder;
+    font-size: 30px;
+    text-shadow: 10px 10px 10px 10px #775296;
+}
+
+.body-div-ul {
+    display: flex;
+    list-style-type: none;
+    float: inline-end;
+    flex-direction: row;
+    justify-content:space-between;
+    margin-left: 25px;
+    font-size: 25px;
+    color: #8906d4;
+}
+
+.body-div-ul-li {
+    display: flex;
+    font-style:'Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif';
+    display: inline;
+    color: #8906d4;
+    font-weight:bold;
+}
+
+.p {
+    font-family:'Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif';
+    font-size: 18px;
+    text-indent: 15px;
+    word-wrap:break-word;
+    border: 5px groove #c9204a;
+    border-radius: 50px;
+    box-shadow: 5px 5px 5px 5px #bb8588;
+    color: #350453;
+    background-color:bisque;
+    text-decoration: wavy;
+    overflow-wrap: break-word;
+}
+
+/*.split {
+    height: 100%;
+    width: 50%;
+    position: fixed;
+    z-index: 1;
+    top: 50;
+    overflow-x: hidden;
+}
+
+.left {
+    left: 0;
+}
+
+.right {
+    right: 0;
+}
+
+.positioning {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+*/
+
+/*Images*/
+
+.profile-pic {
+    border: 5px groove #c9204a;
+    border-radius: 30px;
+    float:left;
+    height: 20%;
+    width: 20%;
+    box-shadow: 5px 5px 5px 3px #bb8588;
+}
+
+/*
+.img-body {
+    font-style:'Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif';
+    color: #8906d4;
+    font-weight: bolder;
+    font-size: 30px;
+    text-shadow: 10px 10px 10px 10px #775296;
+    overflow:auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+*/
+
+.scrollable {
+    overflow-x: hidden;
+    overflow-y: visible;
+}
+
+.img-1 {
+    display:block;
+    border: 5px groove #c9204a;
+    border-radius: 30px;
+    margin-right:auto;
+    margin-left: auto;
+    height: 500%;
+    width: 50%;
+    box-shadow: 5px 5px 5px 5px #bb8588;
+}
+
+.img-1:hover {
+    display:block;
+    border: 5px groove #c9204a;
+    border-radius: 30px;
+    margin-right:auto;
+    margin-left: auto;
+    height: 500%;
+    width: 50%;
+    box-shadow: 5px 5px 5px 5px #bb8588;
+    transition: transform .25s ease;
+    transform: scale(1.25);
+}
+
+.img {
+    display: flex;
+    flex-direction: row;
+    border: 5px groove #c9204a;
+    border-radius: 30px;
+    height: 25%;
+    width: 32%;
+    box-shadow: 5px 5px 5px 5px #bb8588;
+    float:left;
+}
+
+.img:hover {
+    border: 5px groove #c9204a;
+    border-radius: 30px;
+    height: 500%;
+    width: 50%;
+    box-shadow: 5px 5px 5px 5px #bb8588;
+    transition: transform .25s ease;
+    transform: scale(1.25);
+}
+
+/*Footer*/
+
+.footer {
+text-align: center;
+font-size: smaller;
+color: #350453;
+}
+
+@media screen {
+    main,
+    nav {
+      flex-direction: column;
+    }
+    aside {
+      order: 2;
+    }
+  }
