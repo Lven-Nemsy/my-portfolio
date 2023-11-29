@@ -4,5 +4,8 @@ import Image from "react-bootstrap/Image";
 import Row from "react-bootstrap/Row";
 
 export default function Resume() {
+    return (
     <a>hello</a>
+    
+    );
 }

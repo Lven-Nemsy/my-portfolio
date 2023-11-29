@@ -5,8 +5,8 @@ import Row from "react-bootstrap/Row";
 
 export default function Contact() {
 	return (
-			<div>
-				<a>hello there</a>
-			</div>
+		<div>
+			<a>hello there</a>
+		</div>
 	);
 }
