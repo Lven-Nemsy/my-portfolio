@@ -20,7 +20,7 @@ export default function About() {
 							<Row>
 								<Col xs={6} md={4}>
 									<Image
-										src="../../src/assets/images/001E0A6C-65CA-4380-AE34-43E657CA503E.jpg"
+										src="../../src/assets/images/1E0A6C-65CA-4380-AE34-43E657CA503E.jpg"
 										roundedCircle fluid
 										alt="Image of Nedda Elsayed"
 									/>
